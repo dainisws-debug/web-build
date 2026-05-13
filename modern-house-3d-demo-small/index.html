@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern House 3D Template</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-live="polite">
+      <span class="loader__label">Ielade 3D majai</span>
+      <span class="loader__bar"><span id="loaderBar"></span></span>
+      <span class="loader__count" id="loaderCount">0%</span>
+    </div>
+
+    <canvas id="scene" aria-label="Interaktiva 3D modernas majas aina"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Modern House sakums">Modern House</a>
+      <nav class="nav" aria-label="Galvena navigacija">
+        <a href="#vision">Vibe</a>
+        <a href="#details">Details</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero__copy">
+          <p class="eyebrow">Interactive 3D web template</p>
+          <h1>Architecture that moves with the visitor.</h1>
+          <p class="lead">
+            Vienas lapas 3D animacijas majaslapa ar Three.js, radita ka tirss
+            paraugs nekustama ipasuma, dizaina vai portfolio projektam.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#details">Explore scene</a>
+            <a class="button button--ghost" href="#contact">Start project</a>
+          </div>
+        </div>
+
+        <div class="stats" aria-label="Projekta raditaji">
+          <span><strong>01</strong>GLB model</span>
+          <span><strong>360</strong>soft orbit</span>
+          <span><strong>3D</strong>scroll flow</span>
+        </div>
+      </section>
+
+      <section class="section split" id="vision">
+        <div>
+          <p class="eyebrow">Vibe</p>
+          <h2>Calm luxury, cinematic motion.</h2>
+        </div>
+        <p>
+          Skrollojot kamera lenam maina skatu, pele pievieno nelielu paralaksi,
+          un modelis paliek ka lapas galvenais vizualais signals. Teksts ir
+          gatavs nomainisanai uz jebkuru realu majas, villas vai arhitekturas
+          projekta piedavajumu.
+        </p>
+      </section>
+
+      <section class="section feature-band" id="details">
+        <article>
+          <span>01</span>
+          <h3>Immersive hero</h3>
+          <p>Pirmais ekrans uzreiz parada 3D objektu, nevis marketinga plakatu.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Scroll choreography</h3>
+          <p>Modelis un kamera mainas lidz ar lapas ritmu, saglabajot kontroli.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Responsive layout</h3>
+          <p>Lapa pielagojas mobilajam un desktop skatam bez satura parklasanas.</p>
+        </article>
+      </section>
+
+      <section class="section closing" id="contact">
+        <p class="eyebrow">Ready template</p>
+        <h2>Use it as a base for a real 3D landing page.</h2>
+        <a class="button button--primary" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
